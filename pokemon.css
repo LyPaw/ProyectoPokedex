@@ -1,0 +1,83 @@
+body {
+  background: #6b6b6b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+}
+
+a {
+  color: lightgray;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 60%;
+  padding: 8px;
+  background: #222222;
+  color: white;
+  border: 1px solid gray;
+}
+
+button {
+  padding: 8px 12px;
+  background: #d32f2f;
+  color: white;
+  border-radius: 10px;
+}
+button:hover{
+    background-color: #cd0808;
+}
+
+#listado-pokemon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.tarjeta {
+  padding: 10px;
+  background: #222222;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.tarjeta img {
+  width: 100%;
+}
+
+.tarjeta h3 {
+  text-transform: capitalize; /*Mayusculas*/
+}
+
+/* Ficha */
+.ficha {
+  padding: 15px;
+  background: #222222;
+  border: 1px solid gray;
+  text-transform: capitalize;
+}
+
+.ficha img {
+  width: 200px;
+}
+
+.ficha div {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+@media (max-width: 700px) {
+  #listado-pokemon {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
